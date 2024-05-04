@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app_orm/css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>
+
+        {% block title %}
+        ORM
+        {% endblock title %}
+
+    </title>
+</head>
+
+<body>
+    <header class="menu">
+        <div>
+            <a href="/orm/">FORM</a>
+        </div>
+        <div>
+            <a href="/orm/table/">TABLE</a>
+        </div>
+        <div>
+            <a href="/orm/table/last5/">LAST 5</a>
+        </div>
+    </header>
+    <section>
+        {% block content %}
+
+        {% endblock content %}
+    </section>
+</body>
+
+</html>

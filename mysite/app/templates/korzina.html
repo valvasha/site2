@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1>Каталог и Оформление заказа</h1>
+<hr>
+    <p>Вы еще не уверены, какая длина лыж подойдет вам?
+    <br>Введите направление и ваш рост ниже:</p>
+    <form action="/" method="POST" id="form">
+<div>
+<p>Направление: <select name="vid">
+<option value="Слалом" selected>Слалом</option>
+<option value="Универсал" >Универсал</option>
+<option value="Фрирайд" >Фрирайд</option>
+</select></p>
+</div>
+
+<label><p>Ваш рост:
+<input type="number" name="rost" value="1"></p>
+</label>
+
+<div class="mar"><button type="submit">Узнать подходящую длину</button></div>
+
+<br><div id="outed" class="button_text"></div>
+</form>
+
+<div class="price">
+    <table cellpadding=5 width="90%"><tr height='220px'>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+    <td  align = 'center'>
+    <a href="{% static 'img/img18.png' %}" target="_blank"> <img src="{% static 'img/img18.png' %}" width="73px" height="378px"> </a>
+        <br><p><a href="https://sport-marafon.ru/catalog/gornye-lyzhi-sporttsekh/gornye-lyzhi-head-wcr-e-gs-rebel-masters-wcr-14-white-black/" target="_blank">Горные лыжи Head</a>
+      <br>74 990 ₽</p>
+    <br> Заказать <input name="amount" type="text"> шт.
+    <br><input name="head" type="Checkbox" value="Положить в корзину"></td>
+    <td align="center">
+    <a href="{% static 'img/img19.png' %}" target="_blank"> <img src="{% static 'img/img19.png' %}" width="73px" height="378px"> </a>
+      <br><p><a href="https://sport-marafon.ru/catalog/gornye-lyzhi-dlya-frirayda/gornye-lyzhi-armada-tracer-108-2/" target="_blank">Горные лыжи Armada</a>
+      <br>55 990 ₽</p>
+    <br> Заказать <input name="amount" type="text"> шт.
+    <br><input name="armada" type="Checkbox" value="Положить в корзину"></td>
+    <td align = 'center'>
+    <a href="{% static 'img/img20.png' %}" target="_blank"> <img src="{% static 'img/img20.png' %}" width="73px" height="378px"> </a>
+      <br><p><a href="https://sport-marafon.ru/catalog/universalnye-gornye-lyzhi/gornye-lyzhi-atomic-n-maverick-88-ti-black-grey/" target="_blank">Горные лыжи Atomic</a>
+      <br>63 590 ₽</p>
+    <br> Заказать <input name="amount" type="text"> шт.
+        <br><input name="atomic" type="Checkbox" value="Положить в корзину"></td>
+    <td align="left" width="250px">
+    <p>Фамилия: <input name="last_name" size=20 type="Text" value="Ширяева">
+       <br>Имя:<input name="name" size=20 type="Text" value="Валерия">
+       <br>Контактный номер:<input name="number" size=20 type="Text" value="+79">
+       <br>Электронная почта:<input name="email" size=20 type="email">
+       <br>Длина лыж: <input type="number" size=3 name="lenth" min="155" max="195" value="155"></p>
+       <input name="Reset" type="Reset" value="Обновить">
+        <input name="submit" type="Submit" value="Отправить"></p></td>
+    </form></tr></table>
+</div>
+{% endblock content %}

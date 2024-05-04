@@ -1,0 +1,47 @@
+{% extends 'app_orm/base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <h3>Статистика по объёму жидкости</h3>
+    <table>
+        <tr>
+            {% for name in statistic.keys %}
+            <th>
+                <p>{{ name }}</p>
+            </th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for value in statistic.values %}
+            <td>
+                <p>{{ value }}</p>
+            </td>
+            {% endfor %}
+        </tr>
+
+    </table>
+</section>
+<section>
+    <h3>Отображение в виде таблицы всех ранее введенных данных</h3>
+    <table>
+        <tr>
+            {% for name in fields_verbose_name %}
+            <th>
+                <p>{{ name }}</p>
+            </th>
+            {% endfor %}
+        </tr>
+
+        {% for values in objects_values_list %}
+        <tr>
+            {% for value in values %}
+            <td>
+                <p>{{ value }}</p>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+
+    </table>
+</section>
+{% endblock content %}

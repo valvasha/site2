@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1>Выбор лыж<a href="https://bongo.cat/"> <img src="{% static 'img/imghref.png' %}" width="42,2px" height="40px"></a>
+</h1><hr>
+    <p>Выбор новой пары лыж может затянуться на долгие недели изучения каталогов и отзывов. Отдельная тема для размышлений — правильный подбор ростовки. В этом материале разделим лыжи по назначению, и поговорим, как их выбирать и как не ошибиться.</p>
+    <div id="video">
+        <iframe width="800" height="420"
+                src="https://www.youtube.com/embed/yNiSrqkC4iM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+
+        </iframe>
+</div>
+    <table background="{% static 'img/bgtb.jpg' %}">
+        <thead>
+        <tr>
+			<th>Назначение</th>
+			<th>Рост лыжника</th>
+			<th>Длина лыжи</th>
+		</tr></thead>
+	<tbody>
+		<tr>
+			<td rowspan="4">Слалом</td>
+			<td>>165 cm</td>
+			<td>155-160 cm</td>
+		</tr>
+		<tr>
+			<td>165-175 cm</td>
+			<td>160-165 cm</td>
+		</tr>
+		<tr>
+			<td>175-180 cm</td>
+			<td>167-168 cm</td>
+		</tr>
+		<tr>
+			<td>180+ cm</td>
+			<td>167-170 cm</td>
+		</tr>
+		<tr>
+			<td>Универсал</td>
+			<td>Любой на среднем радиусе</td>
+			<td>- 5-7 cm от роста</td>
+		</tr>
+		<tr>
+			<td>Фрирайд</td>
+			<td colspan="2">+ 0-15 cm к росту</td>
+		</tr>
+	</tbody>
+</table>
+<p>Стало интересно, что за назначения?
+<br>Тогда возвращайся к <a href="#menu">меню,</a> чтобы познакомиться с дисциплинами и их историей.</p>
+{% endblock content %}

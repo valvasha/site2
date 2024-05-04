@@ -1,0 +1,60 @@
+.container {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.menu {
+    border: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-self: start;
+    background-color: rgba(108, 241, 197, 0.527);
+}
+
+.menu div {
+    margin: 10px;
+    height: 100%;
+    padding: 5px;
+}
+
+.menu div:hover {
+    transition-duration: 1s;
+    background-color: rgb(68, 177, 117);
+}
+
+.menu div a {
+    text-decoration: none;
+    color: black;
+}
+
+.about {
+    border: 5px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgba(108, 241, 197, 0.527);
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.information {
+    max-width: 500px;
+}
+
+.information_only {
+    margin: 20px;
+}
+
+.photo img {
+    margin: 10px;
+    width: 300px;
+}
+
+.photo img {
+    max-width: 400px;
+}

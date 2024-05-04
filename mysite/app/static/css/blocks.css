@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+
+body {
+		background: #000 url(Bg.jpg);
+		background-attachment: scroll;
+		background-repeat: repeat-y;
+}
+.background {
+    text-align: center;
+    background: url("bg_h1.jpg") top center;
+    padding: 120px 10px;
+}
+.transparent {
+    font-family: Verdana,fantasy;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rebeccapurple;
+    color: #FFFFFF;
+    mix-blend-mode: multiply;
+    height: 53px;
+    width: 100%;
+    display: inline-block;
+}
+.background hr {
+     border: none;
+     background-color: white;
+     height: 3px;
+}
+.master {
+    background-color: rgb(190, 204, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: -1%;
+}
+.menu{
+
+    display: flex;
+    background-color: #660099;
+    width: 100%;
+    height: auto;
+
+    justify-content:flex-end;
+    align-items: center;
+}
+.button_block{
+    display: block;
+    width: 130px;
+    height: 40px;
+    position: relative;
+}
+.button_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #660099;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.drop_block{
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.25s;
+    transition-delay: 0.15s;
+
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    top:100%;
+    left: 0%;
+}
+.button_block:hover .drop_block{
+    opacity: 1;
+    visibility: visible;
+}
+.button_block:hover .text_button_menu{
+   color: #E39EFF;
+}
+.text_button_menu{
+    color: aliceblue;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+.block_in_drop{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.block_list{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height:50px;
+    position: relative;
+    justify-content: flex-start;
+}
+.block_list:hover{
+    background-color: rgb(223, 232, 255);
+    box-shadow: #FFFFFF;
+}
+.block_list:hover .text_list_in_drop2{
+    color: #8D1AC6;
+}
+.text_list_in_drop1{
+    color: #8D1AC6;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    left: 10%;
+    text-decoration: none;
+}
+.text_list_in_drop2{
+    color:#1B0026;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 10%;
+    right: 5%;
+    text-decoration: none;
+}
+h1{
+    color: #75009d;
+    font-family: Montserrat, monospace;
+    font-size: 80px;
+    margin-left: 40px;
+}
+h2{
+   color: #440059;
+    font-family: Montserrat, monospace;
+    font-size: xx-large;
+    margin-left: 60px;
+}
+h3{
+    color: #440059;
+     font-family: Montserrat, monospace;
+     font-size: 25px;
+     margin-left: 60px;
+}
+p{
+    color: black;
+    font-family: "Candara Light";
+    font-size: 23px;
+    font-weight: lighter;
+    margin-left: 40px;
+    width: 80%;
+}
+hr{
+    border: none;
+    background-color: rebeccapurple;
+    height: 3px;
+    width: 300px;
+    margin-left: auto;
+}
+ol{
+    color: #290036;
+    font-family: Montserrat, system-ui;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-left: 17px;
+}
+ol ul{
+    color: black;
+    font-family: Montserrat, system-ui;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+ol > a{
+    color: #290036;
+    font-family: Montserrat, system-ui;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-left: 17px;
+}
+ul a{
+     color: black;
+    font-family: Montserrat, system-ui;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+ul{
+    color: black;
+    font-family: "Candara Light";
+    marker: none;
+    font-size: 23px;
+    font-weight: lighter;
+    margin-left: 55px;
+    width: 80%;
+}
+blockquote{
+    background-color: #bed4ff;
+    width: 650px;
+}
+.mar{
+    margin-left: 40px;
+}
+.foto {
+    display: block;
+    margin-left: 30px;
+}
+.foto + p{
+    font-family: Montserrat;
+    font-size: 12px;
+    margin-left: 30px;
+    width: 1000px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#video {
+    float: right;
+    margin-right: 60px;
+}
+table{
+    font-family: Montserrat;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: unset;
+    text-align:center;
+    margin-left: 40px;
+}
+table th {
+    font-weight: bold;
+    font-size:16px;
+    color: #660099;
+    background-color: #bed4ff;
+}
+table td{
+    font-size: 15px;
+    color: #1B0026;
+}
+table td, .table th{
+    white-space:pre-wrap;
+    padding:26px 6px;
+    line-height:15px;
+    vertical-align: middle;
+    border: 1px solid #1B0026;
+}
+table tr:hover td{
+    color: #FFFFFF;
+    cursor:default;
+}
+.mobile-table{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.button_text{
+    font-family: Montserrat, sans-serif;
+    font-size: 23px;
+    color: #660099;
+    margin-left: 40px;
+}
+.price table{
+    font-family: Montserrat;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: unset;
+    text-align:center;
+    margin: auto;
+}
+.price table th {
+    font-weight: bold;
+    font-size:16px;
+    color: #660099;
+    background-color: #bed4ff;
+}
+.price table td{
+    font-size: 15px;
+    color: #1B0026;
+}
+.price table td, .price .table th {
+    white-space: pre-wrap;
+    padding: 26px 6px;
+    line-height: 15px;
+    vertical-align: middle;
+    border: none;
+}
+.price table tr:hover td{
+    color: #1B0026;
+    cursor: default;
+}
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url("icon_botton.png") no-repeat;
+}

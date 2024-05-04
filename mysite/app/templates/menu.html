@@ -1,0 +1,119 @@
+        {% load static %}
+        <!-- коробка меню -->
+        <div class="menu">
+            <!-- Коробка для кнопок -->
+            <div class="button_block">
+                <div class="button_menu">
+                  <a href="glavnaya.html" class="text_button_menu">
+                    {% if request.path == "/glavnaya.html" %}
+                    <font color="#ff00d0">
+                      Главная
+                    </font>
+                    {% else %}
+                      Главная
+                    {% endif %}    
+                  </a>
+                </div>
+            </div>
+            <div class="button_block">
+              <div class="button_menu">
+                <a href="disciplina.html" class="text_button_menu">
+                  {% if request.path == "/disciplina.html" %}
+                  <font color="#ff00d0">
+                    Дисциплины
+                  </font>
+                  {% else %}
+                  Дисциплины
+                  {% endif %}                  
+                </a>
+              </div>
+              <div class="drop_block">
+                <div class="block_in_drop">
+                  <div class="block_list block_list_left"><a href="disciplina.html#classica" class="text_list_in_drop1">Классика</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-slalom" class="text_list_in_drop2">Слалом</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-slalom-gigant" class="text_list_in_drop2">Слалом-гигант</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-supergigant" class="text_list_in_drop2">Супергигант</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-skorspusk" class="text_list_in_drop2">Скоростной спуск</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-combinacia" class="text_list_in_drop2">Комбинация</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-comanda" class="text_list_in_drop2">Параллельные командные соревнования</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#classica-masters" class="text_list_in_drop2">«Спортцех», «мастерс» и аналоги</a></div>
+                </div>
+                <div class="block_in_drop">
+                  <div class="block_list block_list_left"><a href="disciplina.html#free" class="text_list_in_drop1">Фристайл</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#free-acrobatica" class="text_list_in_drop2">Лыжная акробатика</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#free-mogul" class="text_list_in_drop2">Могул</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#free-ski-cross" class="text_list_in_drop2">Ски-кросc</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#free-slope" class="text_list_in_drop2">Слоупстайл</a></div>
+                  <div class="block_list block_list_right"><a href="disciplina.html#free-pipe" class="text_list_in_drop2">Лыжный хаф-пайп</a></div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="button_block">
+              <div class="button_menu">
+                <a href="istoria.html" class="text_button_menu">
+                  {% if request.path == "/istoria.html" %}
+                  <font color="#ff00d0">
+                    История
+                  </font>
+                  {% else %}
+                  История
+                  {% endif %} 
+                </a>
+              </div>
+              <div class="drop_block">
+  
+                <div class="block_in_drop">
+                  <div class="block_list block_list_left"><a href="istoria.html#classica" class="text_list_in_drop1">Классика</a></div>
+                  <div class="block_list block_list_left"><a href="istoria.html#free" class="text_list_in_drop1">Фристайл</a></div>
+                </div>
+  
+              </div>
+            </div>
+            <div class="button_block">
+              <div class="button_menu">
+                <a href="korzina.html#katalog" class="text_button_menu">
+                  {% if request.path == "/korzina.html" %}
+                  <font color="#ff00d0">
+                    Каталог
+                  </font>
+                  {% else %}
+                  Каталог
+                  {% endif %} 
+                </a>
+              </div>
+            </div>
+
+            <div class="button_block">
+              <div class="button_menu">
+                <a href="info.html" class="text_button_menu">
+                  {% if request.path == "/info.html" %}
+                  <font color="#ff00d0">
+                    Информация
+                  </font>
+                  {% else %}
+                  Информация
+                  {% endif %} 
+                </a>
+              </div>
+            </div>
+
+            <div class="button_block">
+              <div class="button_menu">
+                <a href="tusk.html" class="text_button_menu">
+                  {% if request.path == "/tusk.html" %}
+                  <font color="#ff00d0">
+                    Задача
+                  </font>
+                  {% else %}
+                  Задача
+                  {% endif %} 
+                </a>
+              </div>
+            </div>
+
+            <div class="button_block">
+              <div class="button_menu"><a href="https://sport-marafon.ru/" class="text_button_menu" target="_blank"><img src="{% static 'img/imghref.png' %}" width="27,4px" height="26px"></a></div>
+            </div>
+          </div>
+          <!--  конец коробка меню -->

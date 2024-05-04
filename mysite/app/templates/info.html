@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<blockquote>
+    <ol>
+    <li><a href="#student">Студент</a></li>
+    <li><a href="#programm">Программа</a></li>
+    <li><a href="#supervisor">Руководитель</a></li>
+    <li><a href="#manager">Менеджер</a></li>
+    <li><a href="#students">Сокурсники</a></li>
+  </ol>
+</blockquote>
+<h1>Инфорамация<br> о студенте</h1>
+<hr>
+<h2 id="student">Студент</h2>
+<h3>{{me.name}}</h3>
+    <img src="{% static "/info/" %}{{me.photo}}" style="margin-left: 30px; width: 500px;">
+    <p><b>Email: </b> {{me.email}}</p>
+    <p><b>Phone: </b> {{me.phone}}</p>
+<hr>
+<h2 id="programm">Образовательная программа</h2>
+<h3>{{programm.name_programm}}</h3>
+    <p><b>Описание: </b>{{programm.description}}</p>
+<h2 id="supervisor">Руководитель</h2>
+<h3>{{supervisor.name}}</h3>
+    <img src="{% static "/info/" %}{{supervisor.photo}}" style="margin-left: 30px; width: 500px;">
+    <p><b>Email: </b> {{supervisor.email}}</p>
+<h2 id="manager">Менеджер</h2>
+<h3>{{manager.name}}</h3>
+    <img src="{% static "/info/" %}{{manager.photo}}" style="margin-left: 30px; width: 500px;">
+    <p><b>Email: </b> {{manager.email}}</p>
+<hr>
+<h2 id="students">Сокурсники</h2>
+<h3>{{student_1.name}}</h3>
+    <img src="{% static "/info/" %}{{student_1.photo}}" style="margin-left: 30px; width: 500px;">
+    <p><b>Email: </b> {{student_1.email}}</p>
+    <p><b>Phone: </b> {{student_1.phone}}</p>
+<h3>{{student_2.name}}</h3>
+    <img src="{% static "/info/" %}{{student_2.photo}}" style="margin-left: 30px; width: 500px;">
+    <p><b>Email: </b> {{student_2.email}}</p>
+    <p><b>Phone: </b> {{student_2.phone}}</p>
+<hr>
+{% endblock content %}

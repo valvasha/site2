@@ -1,0 +1,33 @@
+{% extends 'app_me/base.html' %}
+{% load static %}
+{% block title %}
+
+{{content_object.title}}
+
+{% endblock title %}
+
+{% block header %}
+<section class="container">
+    <div class="menu">
+        {% for nav in navigation %}
+        <div>
+            <a href="/me/{{nav.0}}">{{nav.1}}</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock header %}
+
+{% block content %}
+
+{% if content_object %}
+<hr>
+{% autoescape off %}{{ content_object.content }}{% endautoescape %}
+{% else %}
+<hr>
+<section class="content">
+    <h1>NOT PAGE CONTENT</h1>
+</section>
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Задача  1008</h2>
+<p>
+    Имеются две емкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью объёма M первую емкость, вторую, обе.
+</p>
+<form method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" style="margin-left: 40px;">
+        Проверить
+    </button>
+</form>
+{% if request.POST %}
+<h3>{{ answer.answer_сube }}</h3>
+<h3>{{ answer.answer_celindr }}</h3>
+<h3>{{ answer.answer_all }}</h3>
+{% endif %}
+{% endblock content %}

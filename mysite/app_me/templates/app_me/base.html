@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Блок title не переопределён
+        {% endblock title %}
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app_me/css/style.css' %}">
+</head>
+
+<body>
+
+    {% block header %}
+    Меню навигации
+    {% endblock header %}
+
+    {% block content %}
+    Блок content не переопределён
+    {% endblock content %}
+</body>
+
+</html>
